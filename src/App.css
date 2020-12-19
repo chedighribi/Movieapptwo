@@ -1,0 +1,86 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ListM {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 10px;
+
+}
+
+label {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  padding: 5px;
+}
+
+
+.Movie {
+  margin-top: 30px;
+}
+
+
+
+.popout{
+  opacity: 0.9;
+  color: #282c34;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+background-color: #282c34;
+width: 100%;
+}
+
+input {
+  border-radius: 5%;
+}
+.topbar label {
+  color: white;
+}
+
+.btn {
+  color: #fff;
+  background-color: #F44336;
+  border-color: #6c757d;
+}
+
