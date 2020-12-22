@@ -2,6 +2,7 @@ import React from 'react'
 import {Card,Button} from 'react-bootstrap'
 import '../App.css';
 import ReactStars from "react-rating-stars-component";
+import {Link} from 'react-router-dom'
  
 
 
@@ -15,10 +16,10 @@ export default function MovieCard({el, handleDelete }){
     return (
         <div className='Movie'>
             <Card style={{ width: '300px'}}>
-  <Card.Img  src={el.posterUrl} />
+              <Link to={`/trailer/${el.id}`}>
+  <Card.Img  src={el.posterUrl} /> </Link>
   <Card.Body>
     <Card.Title>{el.title}</Card.Title>
-    <Card.Text>{el.description} </Card.Text>
     <ReactStars value={el.rate}/>
     <Button className='btn' onClick={off}>delete</Button>
 
